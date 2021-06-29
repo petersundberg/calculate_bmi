@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BMI</title>
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
+  <!-- styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <main>
+    <section class="container">
+      <!-- Title -->
+      <div class="title">
+        <h2>calculate your bmi</h2>
+        <div class="underline"></div>
+      </div>
+      <!-- wrapper -->
+      <article class="wrapper">
+        <br>
+        <div class="bmi-container">
+          <div>
+            <label for="length">Length:</label>
+            <input name="length" type="number" class="length">
+            <label for="length">cm</label>
+          </div>
+          <div>
+            <label for="weight">Weight:</label>
+            <input name="weight" type="number" class="weight" step=".1">
+            <label for="weight">kg</label>
+          </div>
+          <br>
+          <div class="elements-beside">
+            <label class="bmiLabel">BMI:</label>
+            <p class="bmi">0</p>
+          </div>
+          <div>
+            <p class="comment">Enter length and weight ...</p>
+          </div>
+          <br><br>
+          <!-- calculate button -->
+          <button class="calculate-btn">calculate</button>
+          <button class="reset-btn">reset</button>
+          <div>
+            <br>
+            <a href="https://www.livsmedelsverket.se/matvanor-halsa--miljo/sjukdomar-allergier-och-halsa/overvikt-och-fetma"
+              class="bmi-link" target="_blank">
+              Source about BMI</a>
+            <span class="bmi-link">(SWE)</span>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+  <!-- javascript -->
+  <script src="app.js"></script>
+</body>
+
+</html>
